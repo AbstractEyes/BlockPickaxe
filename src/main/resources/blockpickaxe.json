@@ -1,0 +1,234 @@
+{
+	"effects": {
+		"blockpickaxe": {
+			"clazz": "com.abstractphil.customtools.effects.BlockPickaxeToolEffect",
+			"effect-name": "blockpickaxe",
+			"gui-name": "&f&l✧&a&l✧&2&l✧ &a&lPUMPKIN &f&lAXE &2&l✧&a&l✧&f&l✧",
+			"item-lore": [
+				"",
+				"  &6&l• &e&lSTATISTICS&7:",
+				"",
+				"  &2&l• &a&lTOTAL &2&lHARVESTED&7: &f%paxe",
+				"  &3&l• &b&lADDITIONAL &3&lGAINED&7: &f%toolfort",
+				"  &e&l• &6&lCUSTOM &e&lPUMPKINS&7: &f%toolcustom",
+				"",
+				" &7&o(( ~ &a&oShift &7&o+ &a&oRight-Click &7&oto &a&oUpgrade&7&o! ~ ))"
+			],
+			"gui-lore": [""],
+			"material": "DIAMOND_PICKAXE",
+			"skull-host": "",
+			"max-level": 1,
+			"cost": 0,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"whitelist": [
+				"DIAMOND_ORE",
+				"GOLD_ORE",
+				"IRON_ORE",
+				"COPPER_ORE"
+			]
+		},
+		"toolcrate": {
+			"clazz": "com.abstractphil.customtools.effects.CrateEffect",
+			"effect-name": "toolcrate",
+			"gui-name": "&4&l[!] &c&lCRATE DISCOVERER",
+			"item-lore": ["&cCrate Discoverer&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this will allow you to discover &c&oMonthly Crate",
+				"&7&oupon each &6&oPumpkin &7&oMined!",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "ENDER_PORTAL_FRAME",
+			"skull-host": "",
+			"max-level": 1,
+			"cost": 250000,
+			"chance-per-level": 0.00001,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": [
+				"claimgive %player% Pumpkin_Axe_Reward mcrate give {} Monthly 1"
+			],
+			"whitelist": []
+		},
+		"toolkey": {
+			"clazz": "com.abstractphil.customtools.effects.KeyEffect",
+			"effect-name": "toolkey",
+			"gui-name": "&5&l[!] &d&lKEY FINDER",
+			"item-lore": ["&dKey Finder&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this will allow you to discover &d&oCrate Keys",
+				"&7&oupon each &6&oPumpkin &7&oMined!",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "ENCHANTED_BOOK",
+			"skull-host": "",
+			"max-level": 3,
+			"cost": 150000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 2,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"whitelist": [],
+			"loot": {
+				"fire": {
+					"chance-per-level": 0.00004,
+					"command": "claimgive %player% Pumpkin_Axe_Reward crate gk {} Fire 1"
+				},
+				"void": {
+					"chance-per-level": 0.00003,
+					"command": "claimgive %player% Pumpkin_Axe_Reward crate gk {} Void 1"
+				}
+			}
+		},
+		"toolsell": {
+			"clazz": "com.abstractphil.customtools.effects.SellEffect",
+			"effect-name": "toolsell",
+			"gui-name": "&2&l[!] &a&lAUTO-SELLING",
+			"item-lore": ["&eAuto-Sell&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will allow you to &f&oRight-Click",
+				"&7&oto &a&oSell &7&oany item in your inventory without having",
+				"&7&oto do &c&o/sell all&7&o!",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "DIAMOND",
+			"skull-host": "",
+			"max-level": 1,
+			"cost": 5000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 15,
+			"args": [],
+			"commands": ["sell all"],
+			"whitelist": []
+		},
+		"toolspeed": {
+			"clazz": "com.abstractphil.customtools.effects.SpeedEffect",
+			"effect-name": "toolspeed",
+			"gui-name": "&3&l[!] &b&lSPEED",
+			"item-lore": ["&bSpeed &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will allow you to gain &b&n&oPermanent Speed",
+				"&7&owhen the &6&oAxe &7&ois held in your hand.",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "SUGAR",
+			"skull-host": "",
+			"max-level": 3,
+			"cost": 15000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"whitelist": []
+		},
+		"tooleff": {
+			"clazz": "com.abstractphil.customtools.effects.EfficiencyEffect",
+			"effect-name": "tooleff",
+			"vanilla-enchant": "DIG_SPEED",
+			"gui-name": "&6&l[!] &e&lEFFICIENCY",
+			"item-lore": ["&eEfficiency&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will add &e&oEfficiency &7&oto your",
+				"&7&oaxe which will allow you to mine &6&oPumpkins &7&ofaster.",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "REDSTONE",
+			"skull-host": "",
+			"max-level": 5,
+			"cost": 10000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"whitelist": []
+		},
+		"toolcustom": {
+			"clazz": "com.abstractphil.customtools.effects.CustomEffect",
+			"effect-name": "toolcustom",
+			"gui-name": "&4&l[!] &c&lORE COMPILER",
+			"item-lore": ["&cOre Compiler&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing allows you to mine &e&oBLOCKS instead of ores",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "DIAMOND_BLOCK",
+			"skull-host": "",
+			"max-level": 3,
+			"cost": 50000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"loot": {
+				"pumpkin1": {
+					"chance-per-level": 0.008,
+					"command": "claimgive %player% CUSTOM_TOOL give %player% IRON_BLOCK %amount%"
+				},
+				"pumpkin2": {
+					"chance-per-level": 0.007,
+					"command": "claimgive %player% CUSTOM_TOOL give %player% GOLD_BLOCK %amount%"
+				},
+				"pumpkin3": {
+					"chance-per-level": 0.006,
+					"command": "claimgive %player% CUSTOM_TOOL give %player% DIAMOND_BLOCK %amount%"
+				}
+			},
+			"whitelist": []
+		},
+		"toolfort": {
+			"clazz": "com.abstractphil.customtools.effects.FortuneEffect",
+			"effect-name": "toolfort",
+			"gui-name": "&6&l[!] &e&lPUMPKIN LOOTER",
+			"item-lore": ["&ePumpkin Looter&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will allow you to gain additional",
+				"&7&o&nVanilla Pumpkins&7&o upon each &6&oPumpkin &7&obroken.",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "diamond_block",
+			"skull-host": "",
+			"max-level": 5,
+			"cost": 100000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1.75,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"whitelist": []
+		}
+	}
+}

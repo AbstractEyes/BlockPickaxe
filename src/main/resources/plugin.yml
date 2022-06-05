@@ -1,0 +1,9 @@
+name: CustomTools
+main: com.abstractphil.customtools.ToolMain
+version: 1.0
+description: "AbstractPhil's Customized Tools"
+depend: [RedItems]
+commands:
+  customtool:
+    description: abs custom tools commands.
+    usage: incorrect input for abstools.
